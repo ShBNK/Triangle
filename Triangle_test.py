@@ -9,9 +9,9 @@ def test_isTriangleEgyptTriangle():
     tr = Triangle((0, 0), (0, 3), (4, 0))
     assert tr.isTriangle()
 
-def test_isTriangleisEdgeOY():
-    tr = Triangle((0, 1), (0, 6), (0, 10))
-    assert not tr.isTriangle()
+def test_isTriangleisEdgeParallelOY():
+    tr = Triangle((1, 10), (0, 12), (1, 5))
+    assert tr.isTriangle()
 
 
 def test_isTriangleIsEdgeParallelOX():
